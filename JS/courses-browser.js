@@ -1,31 +1,31 @@
-const validation = JSON.parse(sessionStorage.getItem("User"));
+// const validation = JSON.parse(sessionStorage.getItem("User"));
 
-if(validation == null)
-{
-    location.replace("home.html");
-}
+// if(validation == null)
+// {
+//     location.replace("home.html");
+// }
 
-fetch("https://www.fulek.com/data/api/supit/curriculum-list/hr", {
-    method: "GET",
-    headers: 
-    {
-        'Authorization': 'Bearer ' + validation.data.token    
-    }
-})
-.then(result => {
-    if(result.status != 200)
-    {
-        sessionStorage.clear();
-        location.replace("home.html");
-    } 
-    else
-    {
-        return result.json();
-    }
-})
-.then(token => { 
-    browser_courses(token.data); 
-})
+// fetch("https://www.fulek.com/data/api/supit/curriculum-list/hr", {
+//     method: "GET",
+//     headers: 
+//     {
+//         'Authorization': 'Bearer ' + validation.data.token    
+//     }
+// })
+// .then(result => {
+//     if(result.status != 200)
+//     {
+//         sessionStorage.clear();
+//         location.replace("home.html");
+//     } 
+//     else
+//     {
+//         return result.json();
+//     }
+// })
+// .then(token => { 
+//     browser_courses(token.data); 
+// })
 
 function browser_courses(array)
 {
