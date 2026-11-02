@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    margin-top: 100px;
+}
+
+.container-circles {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px;
+    padding-bottom: auto;
+    gap: 60px;
+    background-color: rgb(246, 243, 243);
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 25px solid rgb(244, 244, 244);
+    box-shadow: 0 2px 5px black;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; 
+    animation: fadeGrowIn  1.5s ease-out forwards;
+    --scale: 1;
+    opacity: 0;      
+}
+
+.circle:hover {
+  transform: scale(1.1); 
+}
+
+@keyframes fadeGrowIn  {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        --scale: 1;
+        opacity: 1;
+    }
+}
+
+.circle a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: inherit;
+    position: relative;
+    align-items: center;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+    border-radius: inherit;
+}
+
+.circle p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+    line-height: 1.4;
+    text-align: center;
+    text-shadow: 0 2.5px 2.5px black;
+    z-index: 1;
+}
+
+.circle p::first-line {
+    color: yellow;
+}

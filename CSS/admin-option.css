@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    margin-top: 85px;
+    overflow: hidden;
+}
+
+.study_plan-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;                             
+    padding: 20px;  
+
+    animation: flyIn 1s ease forwards;
+    opacity: 0;
+
+    height: 300px;
+    margin-left: 25px;
+    padding-right: 0;
+}
+
+@keyframes flyIn {
+    from {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.search-wrapper label {
+    padding: 7.5px 10px 10px 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17.5px;
+}
+
+.search-wrapper input {
+    border: 2px solid blue;
+    border-color: blue;
+    width: 350px;
+    height: 30px;
+    padding-left: 7.5px;
+}
+
+.search-wrapper ul {
+    color: blue;
+    font-family:  Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+#result-table {
+    table-layout: auto;            
+    border-collapse: collapse;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12.5px;
+    margin-left: inherit;
+}
+
+#result-table td, th {
+    height: 32.5px;
+    text-align: center;
+    white-space: normal; 
+    text-overflow: ellipsis;
+}
+
+#result-table td:first-child,
+#result-table th:first-child {
+    text-align: left;
+    min-width: 200px !important; 
+}
+
+#result-table td:not(:first-child),
+#result-table th:not(:first-child) {
+    width: 0px;
+}
+
+#result-table th:nth-child(1) {
+    width: 7.5%;
+    padding-left: 0px !important;
+}
+
+
+#result-table .display-title th {
+    font-size: 15px;
+    padding: 0px 5px;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgray;
+}
+
+#result-table th:nth-child(6){
+    text-align: left;
+    padding-left: 0px;
+}
+
+#result-table .display-footer {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-top: 4px solid black;
+}
+
+#result-table .display-footer td:first-child {
+    text-align: right;
+}
+
+#result-table .Inserted_row {
+    text-align: center;
+}
+
+#result-table .Inserted_row:nth-child(even) {
+    background-color: rgb(230, 230, 230);
+}
+
+#result-table .delete-button {
+    margin-left: 20px;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    box-shadow: 0 1px 2px gray;
+    cursor: pointer;
+}
+
+#table-wrapper {
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 320px;
+    margin-top: 5px;
+    margin-right: 50px;
+}

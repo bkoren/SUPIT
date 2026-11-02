@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    margin-top: 75px;
+    overflow: hidden;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.form-container .form-user {
+    width: 400px;
+    height: 322.5px;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.form-container .form-user h1 {
+    margin-bottom: 7.5px;
+    padding: 0px;
+
+    font-size: 30px;
+}
+
+.form-container .form-user * {
+    padding: 10px;
+    padding-left: 0;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form-container .form-user button {
+    margin-top: 15px;
+    margin-bottom: 0px;
+
+    color: white;
+    background-color: black;
+}
+
+.form-container .text-register {
+    color:blue;
+}
+
+.form-container #message-login {
+    padding: 0;
+    color: red;
+}
+
+.form-container #message-register {
+    display: none;
+    color: blue;
+}

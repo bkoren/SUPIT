@@ -1,0 +1,75 @@
+.form-contact-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 100;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.form-contact-container.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.form-contact-container .header-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-contact-container .header-wrapper img {
+    height: 25px;
+    width: 50px;
+    padding-right: 10px;
+}
+
+.form-contact-container .form-content {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-contact-container .form-content .input-style {
+    width: 460px;
+    max-width: 80%;
+    margin: 5px 10px 10px 0px;
+    padding: 5px
+}
+
+
+.form-contact-container .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+
+.form-contact-container .button-wrapper > * {
+    height: 30px;
+    width: 75px;
+    margin: 12.5px 5px 10px 0px;
+    cursor: pointer;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 75;
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}

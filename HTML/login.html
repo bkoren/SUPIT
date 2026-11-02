@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPIT</title>
+
+    <link rel="icon" type="image/png" href="/Materials/Algebra-logo.png">
+    <link rel="stylesheet" href="/CSS/layout/navigation.css">
+    <link rel="stylesheet" href="/CSS/layout/login.css">
+    <link rel="stylesheet" href="/CSS/layout/style.css">
+    <link rel="stylesheet" href="/CSS/layout/form.css">
+
+    <script src="/JS/form.js" defer></script>
+    <script src="/JS/login.js" defer></script>
+    <script src="/JS/token.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a id="navigation-login" onclick="" href="">
+            </a>
+            <a href="/HTML/home.html">
+                <img src="/Materials/Icons/home.png" alt="Home_icon"><b>Početna</b>
+            </a>
+            <a href="/HTML/about-us.html">
+                <img src="/Materials/Icons/message.png" alt="About-us_icon"><b>O nama</b>
+            </a>
+            <a href="/HTML/news.html">
+                <img src="/Materials/Icons/info.png" alt="News_icon"><b>Novosti</b>
+            </a>
+            <a id="navigation-admin-option">
+            </a>  
+            <a id="open-form-contact">
+                <img src="/Materials/Icons/news.png" alt="News_icon"><b>Kontakt</b>
+            </a>
+        </nav>
+    </header>
+
+    <div class="form-contact-container" id="form-contact">
+        <form class="form-content" action="https://www.fulek.com/mvc/supit/project-contact-form" method="POST" target="_blank">
+            <div class="header-wrapper">
+                <img src="/Materials/Icons/Black-envelope.png" alt="Envelope Icon" style="vertical-align: middle; width: 24px;">
+                <h2>Kontaktirajte nas</h2>
+            </div>
+
+            <label for="FullName">Puno ime</label>
+            <input class="input-style" type="text" name="FullName" id="FullName" placeholder="Vaše ime" required>
+
+
+            <label for="Email">E-mail</label>
+            <input class="input-style" type="email" name="Email" id="Email" placeholder="E-mail" required>
+
+    
+            <label for="Importance">Važnost poruke</label>
+            <select class="input-style" name="Importance" id="Importance" required>
+                <option value="low">Niska</option>
+                <option value="medium">Srednja</option>
+                <option value="high">Visoka</option>
+            </select>
+
+
+            <label for="message">Poruka</label>
+            <textarea class="input-style" name="message" id="message" rows="5" required></textarea>
+
+
+            <div class="checkbox-wrapper">
+                <label for="ReceiveNewsletter">Želim primati obavijesti</label>
+                <input type="checkbox" name="ReceiveNewsletter" id="ReceiveNewsletter" value="true">
+            </div>
+
+
+            <div class="button-wrapper">
+                <input type="submit" name="submit" value="Pošalji">
+                <button type="button" id="close-form-contact">Odustani</button>
+            </div>
+        </form>
+    </div>
+    <div id="overlay"></div>
+
+    <main>
+        <div class="form-container">
+            <form class="form-user" id="login-form">
+                <h1>PRIJAVA KORISNIKA</h1>
+
+                <label for="username-login">Korisničko ime</label>
+                <input type="text" name="username" id="username-login" placeholder="Username" required>
+
+                <label for="password-login">Lozinka</label>
+                <input type="password" name="password" id="password-login" placeholder="Password" required>
+
+                <button type="button" id="submit-login">PRIJAVI SE</button>
+                <div id="message-login"></div>
+                <div>Nemaš račun? <a class="text-register" href="/HTML/register.html">Registriraj se</a></div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>BUDI IZVRSTAN U ONOME ŠTO VOLIŠ
+            <p class="last-word"><br>ZAISKRI<p>    
+        </p>
+        <img src="../Materials/img/zaiskri-bg.jpg" alt="Zaiskri.jpg">
+    </footer>
+</body>
+</html>
