@@ -28,7 +28,7 @@ A student demo website about Algebra University.
    ```
 2. Go into the project folder and open `index.html` in your browser:
    ```bash
-   cd SUPIT.git
+   cd SUPIT
    start index.html
    ```
    (`start` works on Windows. You can also just double-click `index.html`.)
