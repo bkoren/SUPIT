@@ -24,15 +24,12 @@ A student demo website about Algebra University.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+   git clone https://github.com/bkoren/SUPIT.git
    ```
 2. Go into the project folder and open `index.html` in your browser:
    ```bash
-   cd YOUR-REPO-NAME
+   cd SUPIT.git
    start index.html
    ```
    (`start` works on Windows. You can also just double-click `index.html`.)
 
-## Author
-
-**Bruno Koren** – Software Engineering student at Algebra University, Zagreb
